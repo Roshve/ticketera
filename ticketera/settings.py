@@ -31,14 +31,19 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    
+    #Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    #Local Apps
     'rest_framework',
     'corsheaders',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -127,5 +132,5 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'localhost:3000'
+    'http://localhost:3000',
 )

@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Users(models.Model):
+class User(models.Model):
 
     name = models.CharField("Name",max_length=255)
     last_name = models.CharField("Last name", max_length=255)
